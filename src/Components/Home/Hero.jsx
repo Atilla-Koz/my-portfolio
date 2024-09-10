@@ -10,30 +10,45 @@ export default function Hero() {
     <section className="flex flex-row justify-between w-full h-[700px] bg-black  bg-custom-bg bg-cover bg-center">
       <section className="flex flex-row items-center gap-4 ">
         <div className=" flex flex-col items-center justify-center gap-4">
-          <div className="flex flex-col items-center justify-center gap-4">
+          <a
+            href="https://www.linkedin.com/in/atilla-k%C3%B6z-9b1841194/"
+            className="flex flex-col items-center justify-center gap-4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {' '}
             <img
               className="w-[4rem] h-[4rem] transform rotate-[-90deg]"
               src={linT}
             />{' '}
             <img className="w-[2rem] h-[2rem]" src={linL} />{' '}
-          </div>
-          <div className="flex flex-col items-center gap-4">
+          </a>
+          <a
+            className="flex flex-col items-center gap-4"
+            href="https://github.com/Atilla-Koz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {' '}
             <img
               className="w-[4rem] h-[4rem] transform rotate-[-90deg]"
               src={gitT}
             />{' '}
             <img className="w-[2rem] h-[2rem]" src={gitL} />
-          </div>
-          <div className="flex flex-col items-center gap-4">
+          </a>
+          <a
+            className="flex flex-col items-center gap-4"
+            href="https://www.instagram.com/atillakz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {' '}
             <img
               className="w-[4rem] h-[4rem] transform rotate-[-90deg]"
               src={instaT}
             />{' '}
             <img className="w-[2rem] h-[2rem]" src={instaL} />{' '}
-          </div>
+          </a>
         </div>
         <div
           className="w-[600px] h-[400px] flex flex-col items-center justify-center gap-4"
@@ -43,8 +58,9 @@ export default function Hero() {
             backgroundColor: 'transparent',
           }}
         >
-          <div className="flex flex-col items-center w-[400px]">
-            <section>
+          <div className="flex flex-col items-start w-[400px]">
+            <section className="flex flex-row justify-center items-center gap-4">
+              <hr className="w-[40px]  border-white"></hr>
               <h4 className="text-white text-start">Atilla Koz</h4>
             </section>
             <section>
