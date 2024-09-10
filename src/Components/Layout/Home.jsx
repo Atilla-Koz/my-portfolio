@@ -1,4 +1,5 @@
 import Hero from '../Home/Hero';
+import Footer from './Footer';
 import Header from './Header';
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <section className="bg-black">
       <Header />
       <Hero />
+      <Footer />
     </section>
   );
 }
