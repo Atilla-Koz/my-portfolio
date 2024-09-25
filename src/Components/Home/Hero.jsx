@@ -74,7 +74,7 @@ export default function Hero() {
               </h2>
             </section>
             <section>
-              <h6 className="text-white text-start w-[300px] pt-16">
+              <h6 className="text-white text-start w-[250px] pt-16">
                 I'm a software developer based in Istanbul, Turkey. I have a
                 passion for web development and love to create websites and
                 applications that look good and work well.
