@@ -8,7 +8,7 @@ export default function Header() {
   };
 
   return (
-    <header className="text-white flex flex-row justify-between p-6 bg-black">
+    <header className="text-white flex flex-row justify-between p-6 gap-x-80 bg-black">
       <div>
         <h4 className="text-lg">Atilla</h4>
       </div>
@@ -44,7 +44,7 @@ export default function Header() {
 
       {/* Dropdown Menu for small screens */}
       {isMenuOpen && (
-        <div className="absolute top-[64px] right-0 bg-black w-full sm:hidden">
+        <div className="absolute top-[64px] right-0  bg-black bg-opacity-50 w-full sm:hidden">
           <nav className="flex flex-col items-center gap-4 p-4 text-sm">
             <h6>HOME</h6>
             <h6>ABOUT</h6>
