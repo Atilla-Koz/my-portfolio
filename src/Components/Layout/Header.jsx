@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ak from '../../assets/Header/ak.svg';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ export default function Header() {
 
   return (
     <header className="text-white flex flex-row justify-between lg:p-6 pt-6 pr-4 pl-4 gap-8 bg-black">
-      <h4 className="text-lg">Atilla</h4>
+      <img className="w-[100px] h-[50px]" src={ak} />
 
       {/* Hamburger Menu Button for small screens */}
       <div className="block sm:hidden">
