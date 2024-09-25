@@ -8,8 +8,8 @@ import instaT from '../../assets/Home/HeroContacts/instagramtext.svg';
 export default function Hero() {
   return (
     <section className="flex flex-row justify-between w-full h-[700px] bg-black  bg-custom-bg bg-cover bg-center">
-      <section className="flex flex-row items-center gap-4 ">
-        <div className=" flex flex-col items-center justify-center gap-4">
+      <section className="flex flex-row items-center lg:gap-4 gap-0">
+        <div className=" flex flex-col items-center justify-center lg:gap-4 gap-0">
           <a
             href="https://www.linkedin.com/in/atilla-k%C3%B6z-9b1841194/"
             className="flex flex-col items-center justify-center gap-4"
@@ -61,14 +61,20 @@ export default function Hero() {
           <div className="flex flex-col items-start w-[400px]">
             <section className="flex flex-row justify-center items-center gap-4">
               <hr className="w-[40px]  border-white"></hr>
-              <h4 className="text-white text-start">Atilla Koz</h4>
+              <h4 className="text-white text-start lg:text-[20px] text-[10px] ">
+                Atilla Koz
+              </h4>
             </section>
             <section>
-              <h2 className="text-white text-start">Software Developer</h2>
-              <h2 className="text-[#FF264A] text-start">Creative</h2>
+              <h2 className="text-white text-start lg:text-[40px] text-[20px]">
+                Software Developer
+              </h2>
+              <h2 className="text-[#FF264A] text-start lg:text-[40px] text-[20px]">
+                Creative
+              </h2>
             </section>
             <section>
-              <h6 className="text-white text-center pt-16">
+              <h6 className="text-white text-start w-[300px] pt-16">
                 I'm a software developer based in Istanbul, Turkey. I have a
                 passion for web development and love to create websites and
                 applications that look good and work well.
