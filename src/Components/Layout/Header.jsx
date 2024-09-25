@@ -8,14 +8,12 @@ export default function Header() {
   };
 
   return (
-    <header className="text-white flex flex-row justify-between p-6 gap-x-80 bg-black">
-      <div>
-        <h4 className="text-lg">Atilla</h4>
-      </div>
+    <header className="text-white flex flex-row justify-between lg:p-6 pt-6 pr-4 pl-4 gap-8 bg-black">
+      <h4 className="text-lg">Atilla</h4>
 
       {/* Hamburger Menu Button for small screens */}
       <div className="block sm:hidden">
-        <button onClick={toggleMenu} className="text-white">
+        <button onClick={toggleMenu} className="text-white w-[10px]">
           {/* Hamburger Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
