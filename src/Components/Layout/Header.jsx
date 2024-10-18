@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import ak from '../../assets/Header/ak.svg';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
-export default function Header() {
+export default function Header({ onAboutClick }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -36,26 +35,50 @@ export default function Header() {
 
       {/* Navigation Menu for large screens */}
       <nav className="hidden sm:flex flex-row gap-8 text-sm">
-        <h6>HOME</h6>
-        <Link to="/about">
-          {' '}
+        {/* HOME button */}
+        <button>
+          <h6>HOME</h6>
+        </button>
+
+        {/* ABOUT button, işlevi var */}
+        <button onClick={onAboutClick}>
           <h6>ABOUT</h6>
-        </Link>
-        <h6>WORKS</h6>
-        <h6>CONTACT</h6>
+        </button>
+
+        {/* WORKS button */}
+        <button>
+          <h6>WORKS</h6>
+        </button>
+
+        {/* CONTACT button */}
+        <button>
+          <h6>CONTACT</h6>
+        </button>
       </nav>
 
       {/* Dropdown Menu for small screens */}
       {isMenuOpen && (
         <div className="absolute top-[64px] right-0  bg-black bg-opacity-50 w-full sm:hidden">
           <nav className="flex flex-col items-center gap-4 p-4 text-sm">
-            <h6>HOME</h6>
-            <Link to="/about">
-              {' '}
+            {/* HOME button */}
+            <button>
+              <h6>HOME</h6>
+            </button>
+
+            {/* ABOUT button, işlevi var */}
+            <button onClick={onAboutClick}>
               <h6>ABOUT</h6>
-            </Link>
-            <h6>WORKS</h6>
-            <h6>CONTACT</h6>
+            </button>
+
+            {/* WORKS button */}
+            <button>
+              <h6>WORKS</h6>
+            </button>
+
+            {/* CONTACT button */}
+            <button>
+              <h6>CONTACT</h6>
+            </button>
           </nav>
         </div>
       )}
