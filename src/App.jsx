@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Home from './Components/Layout/Home';
 import About from './Components/Layout/About';
 import './App.css';
@@ -17,15 +17,15 @@ function App() {
 
       {/* About Slider */}
       <div
-        className={`fixed bottom-0 left-0 w-full bg-black transform ${
+        className={`fixed bottom-0 left-0 w-full transform ${
           isAboutOpen ? 'translate-y-0' : 'translate-y-full'
-        } transition-transform duration-500 ease-in-out h-[70%] z-50`}
+        } transition-transform duration-500 ease-in-out z-50 bg-black h-[45%]`}
       >
         <button
           className="text-white absolute top-4 right-4"
           onClick={toggleAbout}
         >
-          X
+          Close
         </button>
         <About />
       </div>
