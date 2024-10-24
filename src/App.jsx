@@ -19,7 +19,7 @@ function App() {
       <div
         className={`fixed bottom-0 left-0 w-full transform ${
           isAboutOpen ? 'translate-y-0' : 'translate-y-full'
-        } transition-transform duration-500 ease-in-out z-50 bg-black h-[45%]`}
+        } transition-transform duration-500 ease-in-out z-50 bg-black lg:h-[45%] h-[65%]`}
       >
         <button
           className="text-white absolute top-4 right-4"
